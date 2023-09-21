@@ -93,7 +93,7 @@ resource "aws_lb_listener_rule" "main" {
 
   condition {
     host_header {
-      values = [var.component == "frontend" ? "${var.env}.rdevopsb72.online" : "${var.component}-${var.env}.rdevopsb72.online"]
+      values = [var.component == "frontend" ? "${var.env}.soujandevops.online" : "${var.component}-${var.env}.soujandevops.online"]
     }
   }
 }
@@ -128,7 +128,7 @@ resource "aws_lb_listener_rule" "public" {
 
   condition {
     host_header {
-      values = ["${var.env}.rdevopsb72.online"]
+      values = ["${var.env}.soujandevops.online"]
     }
   }
 }
